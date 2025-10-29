@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --font-family-montserrat: "Montserrat", sans-serif;
+  --font-family-manrope: "Manrope", sans-serif;
+}
