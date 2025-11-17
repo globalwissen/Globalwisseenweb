@@ -39,8 +39,16 @@ const Navbar = () => {
           </div>
         </div>
 
+        {/* Desktop Button */}
+        <button
+          onClick={() => (window.location.href = "https://ratedacademy.ai/")}
+          className="hidden md:block font-family-montserrat bg-[#003058] text-white px-4 py-2 rounded-md text-sm md:text-base hover:bg-[#00243b] transition-colors duration-200 ml-4"
+        >
+          Access LMS
+        </button>
+
         {/* Mobile Menu Button */}
-        <div className="md:hidden">
+        <div className="md:hidden ml-3">
           <button
             onClick={toggleMenu}
             className="text-[#58595B] hover:text-black transition-colors duration-200 focus:outline-none"
@@ -87,6 +95,16 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
+
+            {/* Mobile Button */}
+            <button
+              onClick={() =>
+                (window.location.href = "https://ratedacademy.ai/")
+              }
+              className="w-full bg-[#003058] text-white py-2 rounded-md font-family-montserrat text-base hover:bg-[#00243b] transition-colors duration-200"
+            >
+              Access LMS
+            </button>
           </div>
         </div>
       )}

@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 const Hero = () => {
   return (
     <main className="min-h-screen px-4 sm:px-6 py-32 sm:py-24" id="home">
