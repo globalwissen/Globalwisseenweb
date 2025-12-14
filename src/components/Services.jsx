@@ -1,5 +1,6 @@
-import { motion } from "framer-motion";
+/* eslint-disable no-unused-vars */
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Services = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -164,6 +165,29 @@ Our next community highlight will be the student certification ceremonies hosted
           ))}
         </motion.div>
       </div>
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="mt-24 bg-[#003058] rounded-[16px] px-6 py-12 lg:px-12 text-center"
+      >
+        <h3 className="text-white text-[20px] lg:text-[28px] font-family-montserrat font-bold mb-4">
+          Discover Your Digital Personality
+        </h3>
+
+        <p className="text-[#BEBFC0] max-w-2xl mx-auto text-[14px] lg:text-[18px] leading-[150%] font-family-manrope mb-8">
+          Take our personality assessment to understand your strengths, learning
+          style, and the digital paths best suited for you.
+        </p>
+
+        <a
+          href="https://personality-test-eight.vercel.app/"
+          className="inline-flex items-center justify-center bg-white text-[#003058] font-semibold px-8 py-4 rounded-[10px] hover:scale-105 transition-transform duration-300"
+        >
+          Take the Personality Test
+        </a>
+      </motion.div>
     </main>
   );
 };
